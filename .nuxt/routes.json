@@ -3,24 +3,28 @@
     "name": "login",
     "path": "/login",
     "component": "C:\\\\xampp\\\\htdocs\\\\simpleblog\\\\pages\\\\login.vue",
-    "chunkName": "pages/login"
+    "chunkName": "pages/login",
+    "_name": "_0942600f"
   },
   {
     "name": "register",
     "path": "/register",
     "component": "C:\\\\xampp\\\\htdocs\\\\simpleblog\\\\pages\\\\register.vue",
-    "chunkName": "pages/register"
+    "chunkName": "pages/register",
+    "_name": "_41798a6d"
   },
   {
     "name": "single",
     "path": "/single",
     "component": "C:\\\\xampp\\\\htdocs\\\\simpleblog\\\\pages\\\\single.vue",
-    "chunkName": "pages/single"
+    "chunkName": "pages/single",
+    "_name": "_7f6cebdc"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\xampp\\\\htdocs\\\\simpleblog\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_3f9abcf8"
   }
 ]
