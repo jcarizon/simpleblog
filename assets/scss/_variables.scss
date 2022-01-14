@@ -1,0 +1,43 @@
+// font size
+$default-font-size: 16px;
+
+// colors
+// 0    - red
+// 120  - green
+// 240  - blue
+// hue - saturation - lightness
+$white:         hsl(0, 0%, 100%);
+$black:         #101010;
+$dark:          #292929;
+$gray:          #f3f3f3;
+$danger:        hsl(0, 100%, 50%);
+$warning:       hsl(40, 100%, 50%);
+$link:          hsl(250, 100%, 50%);
+$info:          hsl(200, 100%, 50%);
+$black-light:   hsl(0, 0%, 60%);
+$dark-light:    hsl(0, 0%, 70%);
+$danger-light:  hsl(0, 100%, 80%);
+$warning-light: hsl(40, 100%, 80%);
+$link-light:    hsl(250, 100%, 80%);
+$info-light:    hsl(200, 100%, 80%);
+$primary:       #101010;
+
+// SPACING SIZES
+$xsm: .30rem;
+$sm: .35rem;
+$md: .65rem;
+$lg: .93rem;
+$xl: 1.5rem;
+$xxl: 2.5rem;
+
+// FONT WEIGHTS
+$montserrat-light: 300;
+$montserrat-regular: 400;
+$montserrat-medium: 500;
+$montserrat-bold: 700;
+$montserrat-extrabold: 800;
+
+// BUCKET PATHS
+$images: '~/assets/images';
+$icons: '~/assets/images/icons';
+$fonts: '~/assets/fonts';

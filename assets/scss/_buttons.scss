@@ -1,0 +1,47 @@
+[class^="button"] {
+    font-weight: $montserrat-bold;
+    background: $primary-color;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid $primary-color;
+    cursor: pointer;
+    outline: 0;
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 1.5rem 1rem;
+    max-height: 70px;
+
+    &[class*="-black"] {
+        color: $black;
+        border: 1px solid $black;
+    }
+
+    &[class*="-gray"] {
+        filter: grayscale(100%);
+        border: 1px solid $gray;
+        opacity: .5;
+    }
+
+    &[class*="-ghost"] {
+        color: inherit;
+        background: #ffffff;
+    }
+
+    &[class*="-rounded"] {
+        border-radius: 30px;
+    }
+
+    &[class*="-full"] {
+        width: 100%;
+        display: block;
+    }
+
+    &[class*="-sm"] {
+        max-height: unset;
+        min-width: 55px;
+        padding: $sm;
+        line-height: 1.3em;
+    }
+}

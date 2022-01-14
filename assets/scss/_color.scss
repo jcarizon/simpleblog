@@ -1,0 +1,39 @@
+$primary-color: $primary;
+
+$type: (
+    primary: $primary-color,
+    white: $white,
+    black: $black,
+    dark: $dark,
+    gray: $gray,
+    warning: $warning,
+    danger: $danger,
+    info: $info,
+    link: $link,
+    shade: $dark,
+    black-light: $black-light,
+    dark-light: $dark-light,
+    warning-light: $warning-light,
+    danger-light: $danger-light,
+    info-light: $info-light,
+    link-light: $link-light,
+);
+
+[class^="clr"] {
+    @each $name, $value in $type {
+        // text
+        &[class*="-#{$name}"] {
+            color: $value;
+        }
+        //background
+        &[class*="-bg-#{$name}"] {
+            background: $value;
+            color: $white;
+        }
+        &[class*="-br-#{$name}"] {
+            color: $value;
+            border: 1px solid;
+            background: $white;
+        }
+    }
+}

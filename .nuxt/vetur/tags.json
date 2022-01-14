@@ -1,0 +1,17 @@
+{
+  "Banner": {
+    "description": "Auto imported from components/Banner.vue"
+  },
+  "Login": {
+    "description": "Auto imported from components/Login.vue"
+  },
+  "News": {
+    "description": "Auto imported from components/News.vue"
+  },
+  "Register": {
+    "description": "Auto imported from components/Register.vue"
+  },
+  "Single": {
+    "description": "Auto imported from components/Single.vue"
+  }
+}

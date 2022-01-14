@@ -1,0 +1,64 @@
+$xsm: .30rem;
+$sm: .35rem;
+$md: .65rem;
+$lg: .93rem;
+$xl: 1.5rem;
+$xxl: 2.5rem;
+$columns: 12;
+
+$sizes: (
+  xsm: $xsm,
+  sm: $sm,
+  md: $md,
+  lg: $lg,
+  xl: $xl,
+  xxl: $xxl,
+  50: 25px,
+);
+
+[class^="_row"] {
+    display: flex;
+    &[class*="-center"] {
+        align-items: center;
+    }
+    &[class*="-bottom"] {
+        align-items: flex-end;
+    }
+    &[class*="-left"] {
+        justify-content: flex-end;
+    }
+    &[class*="-itemcr"] {
+        justify-content: center;
+    }
+    &[class*="-column"] {
+        flex-direction: column;
+    }
+
+    @each $name, $value in $sizes {
+        &.gap-#{$name} {
+            [class^="_col"] {
+                margin: 0 $value;
+                &:first-of-type {
+                    margin-left: 0;
+                }
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+[class^="_col"] {
+    flex-grow: 1;
+    &[class*="-ungrow"] {
+        flex: none;
+    }
+
+    @for $i from 1 through $columns {
+        &[class*="-is-#{$i}"] {
+            flex: none;
+            width: (100% / $i);
+        }
+    }
+}

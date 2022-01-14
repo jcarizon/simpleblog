@@ -1,0 +1,18 @@
+@import 'variables';
+
+._header-row {
+    min-height: 100px;
+    padding: 20px 0;
+}
+
+.header-logo img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-link {
+    font-size: 18px;
+    color: $black;
+    font-weight: $montserrat-bold;
+    letter-spacing: 1px;
+}

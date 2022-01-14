@@ -1,0 +1,26 @@
+[
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "C:\\\\xampp\\\\htdocs\\\\simpleblog\\\\pages\\\\login.vue",
+    "chunkName": "pages/login"
+  },
+  {
+    "name": "register",
+    "path": "/register",
+    "component": "C:\\\\xampp\\\\htdocs\\\\simpleblog\\\\pages\\\\register.vue",
+    "chunkName": "pages/register"
+  },
+  {
+    "name": "single",
+    "path": "/single",
+    "component": "C:\\\\xampp\\\\htdocs\\\\simpleblog\\\\pages\\\\single.vue",
+    "chunkName": "pages/single"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\xampp\\\\htdocs\\\\simpleblog\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
+  }
+]
