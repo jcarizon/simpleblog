@@ -19,7 +19,7 @@
             color: $white;
             background: $black;
             display: inline-block;
-            max-height: 85px;
+            // max-height: 85px;
             &:not(:last-of-type) {
                 margin-bottom: 9px;
             }
@@ -178,5 +178,8 @@
         overflow: auto;
         padding: 10px 0;
         justify-content: left !important;
+    }
+    .carousel_items ._item img {
+        width: auto;
     }
 }
