@@ -1,0 +1,61 @@
+$sizes: (
+  xsm: $xsm,
+  sm: $sm,
+  md: $md,
+  lg: $lg,
+  xl: $xl,
+  xxl: $xxl,
+);
+
+$position: (
+    top: top,
+    right: right,
+    bottom: bottom,
+    left: left,
+);
+
+// PADDING
+@mixin padding($top: null, $right: null, $bottom: null, $left: null) {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+}
+
+@each $name, $value in $sizes {
+    .pad-#{$name} {
+        @include padding($top: $value, $right: $value, $bottom: $value, $left: $value);
+    }
+    @each $pos, $val in $position {
+        .pad-#{$pos}-#{$name}  {
+            padding-#{$pos}: $value !important;
+        }
+        .p#{$pos}-0 {
+            padding-#{$pos}: 0 !important;
+        }
+    }
+}
+// END PADDING
+
+// MARGIN
+@mixin margin($top: null, $right: null, $bottom: null, $left: null) {
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left;
+}
+
+@each $name, $value in $sizes {
+    .mar-#{$name} {
+        @include margin($top: $value, $right: $value, $bottom: $value, $left: $value);
+    }
+    @each $pos, $val in $position {
+        .mar-#{$pos}-#{$name}  {
+            margin-#{$pos}: $value !important;
+        }
+        .m#{$pos}-0 {
+            margin-#{$pos}: 0 !important;
+        }
+    }
+}
+// END PADDING

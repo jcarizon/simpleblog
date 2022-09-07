@@ -1,0 +1,35 @@
+@import 'variables';
+
+._form_container {
+    width: 460px;
+    margin: 80px auto 155px;
+    p {
+        letter-spacing: 4.1px;
+    }
+}
+
+.title {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+._form {
+    font-size: 18px;
+    margin-bottom: 37px;
+}
+
+._field {
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    label,
+    input {
+        display: block;
+    }
+    input {
+        width: 100%;
+        padding: 17px 15px;
+        margin-top: 5px;
+        border: 1px solid $black;
+    }
+}

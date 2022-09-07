@@ -1,0 +1,80 @@
+@import 'variables';
+
+._breadcrumbs {
+    background: #F5F5F5;
+    font-size: 16px;
+    min-height: 80px;
+    padding: 31px 0;
+    a, span {
+        font-weight: 200;
+        color: $black;
+    }
+}
+
+._single_contents {
+    margin-top: 117px;
+
+    .title-1 {
+        font-size: 40px;
+        margin-bottom: 47px;
+    }
+}
+
+._single_date {
+    display: block;
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-bottom: 34px;
+}
+
+._main_image {
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+._text_content {
+    font-size: 18px;
+    p:not(:last-child) {
+        margin-bottom: 50px;
+    }
+}
+
+._comment_section {
+    margin-top: 200px;
+    border-top: 1px solid $black;
+    .title-2 {
+        margin: 53px 0 39px;
+        font-size: 50px;
+        
+    }
+}
+
+._comments {
+    ._item {
+        padding: 60px 35px;
+        background: #F5F5F5;
+        margin-bottom: 50px;
+    }
+    ._comment_date {
+        font-size: 'Montserrat';
+        font-size: 16px;
+        font-weight: $montserrat-bold;
+        margin-top: 20px;
+        display: block;
+    }
+}
+
+._comment_textarea {
+    margin-bottom: 128px;
+    textarea {
+        width: 100%;
+        padding: 42px 35px;
+        min-height: 200px;
+        border: 1px solid $black;
+        text-align: left;
+    }
+    .button {
+        min-width: 210px;
+        margin-top: 40px;
+    }
+}
